@@ -32,4 +32,24 @@ body {
     border-radius: 10px;
     margin-top: 50px;
     padding: 10px;
+    overflow: hidden;
+}
+
+.container h1{
+    display: inline-block;
+    padding: 12px;
+
+}
+
+.container a {
+    float: right;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.notification-box img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin: 10px;
 }
