@@ -9,58 +9,54 @@
 </head>
 <body>
   <!-- Container -->
-  <div class="container"> 
+   <div class="container"> 
       <!-- Header of container -->
       <div class="header">
-        <h1>Notifications<span> 3</span></h1>
-        <a href="#">Mark all as read</a>
+        <h1>Notifications<span id="number-of-notifications"> 3</span></h1>
+        <a href="#" onclick="readMessages()">Mark all as read</a>
       </div>
       <!-- End of header -->
       <!-- Notifications -->
-      <div class="notification-box">
+      <div class="notification-box unread" >
         <img src="/notifications-page/assets/images/avatar-mark-webber.webp" alt="Photo of Mark Webber">
-        <p class="text"><strong>Mark Webber</strong>reacted to your recent post My first tournament today!</p>
-        <div><p>1m ago</p></div>
+        <p class="text"><span class="name">Mark Webber</span> reacted to your recent post <a href="#" class="post">My first tournament today!</a></p>
+        <div class="time">1m ago</div>
         </div>
-      <div class="notification-box">
+      <div class="notification-box unread" >
         <img src="/notifications-page/assets/images/avatar-angela-gray.webp" alt="Photo of Angela Gray">
-        <p class="text"><strong>Angela Gray</strong>followed you</p>
-        <div><p>5m ago</p></div>
+        <p class="text"><a href="#" class="name" id="followed">Angela Gray</a> followed you</p>
+        <div class="time">5m ago</div>
       </div>
-      <div class="notification-box">
+      <div class="notification-box unread">
         <img src="/notifications-page/assets/images/avatar-jacob-thompson.webp" alt="Photo of Jacob Thompson">
-        <p class="text"><strong>Jacob Thompson</strong>has joined your group Chess Club</p> 
-        <div><p>1day ago</p></div>
+        <p class="text"><span class="name">Jacob Thompson</span> has joined your group <a href="#" class="post" id="group">Chess Club</a></p> 
+        <div class="time">1day ago</div>
       </div>
       <div class="notification-box">
         <img src="/notifications-page/assets/images/avatar-rizky-hasanuddin.webp" alt="Photo of Rizky Hasanuddin">
-        <p class="text"><strong>Rizky Hasanuddin</strong>sent you a private message</p>
-        <div><p>5days ago</p></div>
+        <p class="text"><span class="name">Rizky Hasanuddin</span> sent you a private message</p>
+        <div class="time">5days ago</div>
         <div id="private-message">
           <p>Hello, thanks for setting up the Chess Club. Ive been a member for a few weeks now and im already having lots of fun and improving my game.</p>
         </div>
       </div>
       <div class="notification-box">
         <img src="/notifications-page/assets/images/avatar-kimberly-smith.webp" alt="Photo of Kimberly Smith">
-        <p class="text"><strong>Kimberly Smith</strong>commented on your picture</p>
-        <div><p>1week ago</p></div>
+        <p class="text"><span class="name">Kimberly Smith</span> commented on your picture</p> 
+        <a href="#"><img id="chess-img" src="/notifications-page/assets/images/image-chess.webp" alt="photo"></a>
+        <div class="time">1week ago</div>
       </div>
       <div class="notification-box">
         <img src="/notifications-page/assets/images/avatar-nathan-peterson.webp" alt="Photo of Nathan Peterson">
-        <p class="text"><strong>Nathan Peterson</strong>reacted to your recent post 5 end-game strategies to increase your win rate</p>
-        <div><p>2weeks ago</p></div>
+        <p class="text"><span class="name">Nathan Peterson</span> reacted to your recent post <a href="#" class="post">5 end-game strategies to increase your win rate</a></p>
+        <div class="time">2weeks ago</div>
       </div>
       <div class="notification-box">
         <img src="/notifications-page/assets/images/avatar-anna-kim.webp" alt="Photo of Anna Kim">
-        <p class="text"><strong>Anna Kim</strong>left the group Chess Club</p>
-        <div><p>2weeks ago</p></div>
+        <p class="text"><span class="name">Anna Kim</span> left the group <a href="#" class="post" id="group">Chess Club</a></p>
+        <div class="time">2weeks ago</div>
       </div>
-
-    
-
-    
-  
- </div>
- <script src="main.js"></script>
+   </div>
+<script src="main.js"></script>
 </body>
 </html>
